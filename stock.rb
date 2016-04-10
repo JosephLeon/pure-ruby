@@ -31,6 +31,7 @@ class Stock
 
 end
 
+
 @this_stock = Stock.new(
 	:ticker => 'MITL', 
 	:price => 8.21,
