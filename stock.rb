@@ -1,12 +1,12 @@
 # Stock data, processes and information are just for test purposes.
 class Stock
 	attr_reader :ticker, :price, :revenue, :cost_of_revenue, :eps
-	def initialize(ticker, price, revenue, cost_of_revenue, eps)
-		@ticker = ticker
-		@price = price
-		@revenue = revenue
-		@cost_of_revenue = cost_of_revenue
-		@eps = eps
+	def initialize(args)
+		@ticker = args[:ticker]
+		@price = args[:price]
+		@revenue = args[:revenue]
+		@cost_of_revenue = args[:cost_of_revenue]
+		@eps = args[:eps]
 	end
 
 	def gross_profit
@@ -29,7 +29,12 @@ class Stock
 
 end
 
-@this_stock = Stock.new('MITL', 8.21, 1157700, 543800, -0.17)
+@this_stock = Stock.new(
+	:ticker => 'MITL', 
+	:price => 8.21,
+	:revenue => 1157700,
+	:cost_of_revenue => 543800,
+	:eps => -0.17)
 
 puts @this_stock.gross_profit
 puts @this_stock.should_i_buy_you
