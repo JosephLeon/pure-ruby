@@ -15,7 +15,9 @@ class Stock
 
 	def should_i_buy_you
 		if gross_profit > 0 
-			puts "Strong buy"
+			puts "Buy"
+		else
+			puts "Sell"
 		end
 	end
 
