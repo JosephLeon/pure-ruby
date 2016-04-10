@@ -1,4 +1,3 @@
-# Stock data, processes, ratings and information are just for test purposes.
 class Stock
 	attr_reader :ticker, :price, :revenue, :cost_of_revenue, :eps
 	def initialize(args)
