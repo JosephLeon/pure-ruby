@@ -1,2 +1,2 @@
-require 'stock'
-require 'user'
+require 'stockbuddy/stock'
+require 'stockbuddy/user'
