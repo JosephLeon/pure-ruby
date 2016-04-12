@@ -4,7 +4,7 @@ class StockQuote
 		@ticker = args[:ticker]
 	end
 
-	def get_quote()
+	def get_quote(ticker)
 		# using ticker hit external api and get data
 		# for now we will hardcode return values
 		tickers = [:SBUX, :WFC, :BP, :NFLX, :FSLR]
@@ -18,13 +18,6 @@ class StockQuote
 		return data
 	end
 
-	def self.all
-    ObjectSpace.each_object(self).to_a
-  end
-
-  def self.count
-    all.count
-  end
 end
 
-puts StockQuote.new(:ticker => "TICK").get_quote
+puts StockQuote.new(:ticker => "TICK").get_quote("FAKE")
