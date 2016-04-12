@@ -1,20 +1,24 @@
 class User
-	attr_reader :id, :first_name, :last_name, :cash, :stocks_owned
+	attr_reader :id, :first_name, :last_name, :cash
 	def initialize(args)
 		@id = args[:id]
 		@first_name = args[:first_name]
 		@last_name = args[:last_name]
 		@cash = args[:cash]
-		@stocks_owned = args[:stocks_owned]
-		# @stock = args[:stock]
+	end
+
+	def evaluate_stock
+		# send message to stock_quote with ticker and get qoute
+		# invoke StockQuote class
+	end
+
+	def make_purchase
+		# purchase a certain amount of stock
+		# invoke Purchase class
 	end
 
 	def list_stocks_owned
-		# return stocks owned by a user
-	end
-
-	def add_stock_to_portfolio(stock_data)
-		# get snapshot of stock data, save to db referenced to user id
+		# return stocks owned by this user
 	end
 
 end
