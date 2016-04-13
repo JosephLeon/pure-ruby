@@ -17,7 +17,7 @@ class User
 		# invoke Purchase class
 	end
 
-	def list_stocks_owned
+	def _list_stocks_owned
 		# return stocks owned by this user
 	end
 
