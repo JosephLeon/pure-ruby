@@ -14,4 +14,5 @@ Gem::Specification.new do |s|
   # , lib/stockbuddy/stock.rb, lib/stockbuddy/stock_quote.rb, lib/stockbuddy/user.rb
   s.homepage    = ''
   s.license     = 'MIT'
+  s.require_paths = ["lib"]
 end
