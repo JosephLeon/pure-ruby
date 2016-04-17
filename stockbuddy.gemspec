@@ -6,7 +6,8 @@ Gem::Specification.new do |s|
   s.description = "A gem for processing stock related actions"
   s.authors     = ["Joseph Leon"]
   s.email       = ''
-  s.files       = ["lib/stockbuddy.rb, lib/stockbuddy/purchase.rb"]
+  # s.files       = ["lib/stockbuddy.rb, lib/stockbuddy/purchase.rb"]
+  s.files       = `git ls-files`.split($/)
   # , lib/stockbuddy/stock.rb, lib/stockbuddy/stock_quote.rb, lib/stockbuddy/user.rb
   s.homepage    = ''
   s.license     = 'MIT'
