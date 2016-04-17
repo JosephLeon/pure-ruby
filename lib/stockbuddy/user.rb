@@ -1,5 +1,5 @@
 require_relative "stock_quote"
-require_relative "purchase"
+# require_relative "purchase"
 
 class User
 	attr_reader :id, :first_name, :last_name, :cash
@@ -16,8 +16,8 @@ class User
 	end
 
 	def make_purchase(ticker, amount)
-		@stock_data = StockQuote.get_quote("FAKE")
-		@purchase = Purchase.new(:user => "Bob", :amount => amount, :data => @stock_data)
+		# @stock_data = StockQuote.get_quote("FAKE")
+		# @purchase = Purchase.new(:user => "Bob", :amount => amount, :data => @stock_data)
 	end
 
 	def _list_stocks_owned
@@ -26,4 +26,4 @@ class User
 
 end
 
-puts User.make_purchase("FAKE", 20)
+# puts User.make_purchase("FAKE", 20)
