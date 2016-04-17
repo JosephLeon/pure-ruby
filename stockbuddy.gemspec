@@ -1,3 +1,6 @@
+lib = File.expand_path("../lib/", __FILE__)
+$:.unshift lib unless $:.include?(lib)
+
 Gem::Specification.new do |s|
   s.name        = 'stockbuddy'
   s.version     = '0.0.0'
