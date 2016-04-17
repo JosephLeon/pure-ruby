@@ -1,3 +1,4 @@
+$LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'stockbuddy/stock'
 require 'stockbuddy/user'
 require 'stockbuddy/stock_quote'

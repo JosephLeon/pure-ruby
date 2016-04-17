@@ -1,6 +1,5 @@
-lib = File.expand_path("../lib/", __FILE__)
-$:.unshift lib unless $:.include?(lib)
-
+# lib = File.expand_path("../lib/", __FILE__)
+# $:.unshift lib unless $:.include?(lib)
 Gem::Specification.new do |s|
   s.name        = 'stockbuddy'
   s.version     = '0.0.0'
@@ -14,5 +13,5 @@ Gem::Specification.new do |s|
   # , lib/stockbuddy/stock.rb, lib/stockbuddy/stock_quote.rb, lib/stockbuddy/user.rb
   s.homepage    = ''
   s.license     = 'MIT'
-  s.require_paths = ["lib"]
+  # s.require_paths = ["lib"]
 end
