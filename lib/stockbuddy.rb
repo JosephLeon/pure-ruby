@@ -3,7 +3,7 @@ require 'stockbuddy/user'
 require 'stockbuddy/stock_quote'
 require 'stockbuddy/purchase'
 
-puts User.make_purchase("FAKE", 20)
+# puts User.make_purchase("FAKE", 20)
 
 @this_stock = Stock.new(
 	:ticker => 'MITL', 

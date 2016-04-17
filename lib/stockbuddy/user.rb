@@ -1,6 +1,3 @@
-require_relative "stock_quote"
-# require_relative "purchase"
-
 class User
 	attr_reader :id, :first_name, :last_name, :cash
 	def initialize(args)

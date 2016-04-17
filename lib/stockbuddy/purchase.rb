@@ -1,9 +1,8 @@
 class Purchase
-	# attr_reader :user, :amount, :data
-	# def initialize(args)
-	# 	@user => args[:user]
-	# 	@amount => args[:amount]
-	# 	@data => args[:data]
-	# end
+	attr_reader :amount, :price
+	def initialize(args)
+		@amount => args[:amount]
+		@data => args[:price]
+	end
 
 end
