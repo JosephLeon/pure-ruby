@@ -8,7 +8,6 @@ Gem::Specification.new do |s|
   s.email       = ''
   s.files       = ["lib/stockbuddy.rb, lib/stockbuddy/purchase.rb"]
   # , lib/stockbuddy/stock.rb, lib/stockbuddy/stock_quote.rb, lib/stockbuddy/user.rb
-  s.homepage    =
-    'http://rubygems.org/gems/hola'
-  s.license       = 'MIT'
+  s.homepage    = ''
+  s.license     = 'MIT'
 end
