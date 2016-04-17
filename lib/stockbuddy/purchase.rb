@@ -5,4 +5,8 @@ class Purchase
 		@data => args[:price]
 	end
 
+	def fake_method
+		puts "Fake method"
+	end
+
 end
