@@ -19,5 +19,3 @@ class StockQuote
 	end
 
 end
-
-# puts StockQuote.new(:ticker => "TICK").get_quote("FAKE")

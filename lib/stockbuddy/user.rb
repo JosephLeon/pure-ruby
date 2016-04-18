@@ -22,5 +22,3 @@ class User
 	end
 
 end
-
-# puts User.make_purchase("FAKE", 20)
