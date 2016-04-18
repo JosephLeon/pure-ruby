@@ -17,4 +17,4 @@ puts @this_stock.gross_profit
 puts @this_stock.should_i_buy_you
 puts @this_stock.evaluate_eps
 
-puts StockQuote.new(:ticker => "TICK").get_quote("FAKE")
+puts StockQuote.new().get_quote()
