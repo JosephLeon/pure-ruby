@@ -1,8 +1,4 @@
 class StockQuote
-	# attr_reader :ticker
-	# def initialize(args)
-	# 	@ticker = args[:ticker]
-	# end
 
 	def get_quote(ticker)
 		# using ticker hit external api and get data

@@ -7,9 +7,8 @@ class User
 		@cash = args[:cash]
 	end
 
-	def evaluate_stock
-		# send message to stock_quote with ticker and get qoute
-		# invoke StockQuote class
+	def evaluate_stock(ticker)
+		StockQuote.new.get_quote(ticker)
 	end
 
 	def make_purchase(ticker, amount)
