@@ -2,7 +2,7 @@
 # $:.unshift lib unless $:.include?(lib)
 Gem::Specification.new do |s|
   s.name        = 'stockbuddy'
-  s.version     = '0.0.0'
+  s.version     = '0.0.1'
   s.date        = '2016-04-15'
   s.summary     = "Sample gem for messing with stocks"
   s.description = "A gem for processing stock related actions"

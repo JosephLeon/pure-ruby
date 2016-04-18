@@ -12,8 +12,7 @@ class User
 	end
 
 	def make_purchase(ticker, amount)
-		# @stock_data = StockQuote.get_quote("FAKE")
-		# @purchase = Purchase.new(:user => "Bob", :amount => amount, :data => @stock_data)
+		
 	end
 
 	def _list_stocks_owned
