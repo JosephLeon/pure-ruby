@@ -11,12 +11,14 @@ class User
 		StockQuote.new.get_quote(ticker)
 	end
 
-	def make_purchase(ticker, amount)
-		
+	def make_purchase(ticker, shares)
+		# run evaluate_stock(ticker)
+		# calculate if shares purchased are less than self.cash
+		# Purchase.new(self.id, quote, shares)
 	end
 
 	def _list_stocks_owned
-		# return stocks owned by this user
+		# return purchases with an id linked to user.id
 	end
 
 end
