@@ -1,12 +1,13 @@
 class Purchase
-	# attr_reader :amount, :price
-	# def initialize(args)
-	# 	@amount => args[:amount]
-	# 	@data => args[:price]
-	# end
+	attr_reader :user, :stock_quote, :shares
+	def initialize(args)
+		@user = args[:user]
+		@stock_quote = args[:stock_quote]
+		@shares = args[:shares]
+	end
 
-	def fake_method
-		puts "Fake method"
+	def add_purchase_to_db
+		puts "Added purchase to db"
 	end
 
 end
