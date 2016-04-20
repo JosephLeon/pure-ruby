@@ -13,19 +13,18 @@ class User
 
 	def make_purchase(ticker, shares)
 		stock_quote = self.evaluate_stock(ticker)
-		total_purchase = stock_quote["price"] * shares
-		if total_purchase > self.cash
+		total_purchase_price = stock_quote["price"] * shares
+		
+		if total_purchase_price > self.cash
 			return "Not enough funds."
 		else
-			purchase = Purchase.new
+			new_cash_amount = self.cash - total_purchase_price
+			self.instance_variable_set(:@cash, new_cash_amount)
+			purchase = Purchase.new(
+				:user => self.id, 
+				:stock_quote => stock_quote, 
+				:shares => shares).add_purchase_to_db
 			return purchase
 		end
-
-		# Purchase.new(self.id, quote, shares)
 	end
-
-	def _list_stocks_owned
-		# return purchases with an id linked to user.id
-	end
-
 end
