@@ -1,3 +1,3 @@
-# Ruby OOD Learning
+# Ruby Stock Buddy
 
-This isn't a real stock app and it shouldn't be used for that purpose. It's just an fake app for testing OOD patterns in Ruby.
+This is a sample gem that I made for practicing Ruby.
