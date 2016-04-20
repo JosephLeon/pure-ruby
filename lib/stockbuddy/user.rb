@@ -12,8 +12,15 @@ class User
 	end
 
 	def make_purchase(ticker, shares)
-		# run evaluate_stock(ticker)
-		# calculate if shares purchased are less than self.cash
+		stock_quote = self.evaluate_stock(ticker)
+		total_purchase = stock_quote["price"] * shares
+		if total_purchase > self.cash
+			return "Not enough funds."
+		else
+			purchase = Purchase.new
+			return purchase
+		end
+
 		# Purchase.new(self.id, quote, shares)
 	end
 
