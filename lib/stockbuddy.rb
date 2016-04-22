@@ -17,7 +17,9 @@ require 'stockbuddy/purchase'
 # puts @this_stock.should_i_buy_you
 # puts @this_stock.evaluate_eps
 
+puts StockQuote.get_quote("FOO")
 # puts StockQuote.new().get_quote("FOO")
+# puts DetailedStockQuote.new().get_quote("FOO")
 
 @tom_petty = User.new(
 	:id => 1,
