@@ -8,7 +8,7 @@ class User
 	end
 
 	def evaluate_stock(ticker)
-		StockQuote.new.get_quote(ticker)
+		StockQuote.get_quote(ticker)
 	end
 
 	def make_purchase(ticker, shares)
