@@ -15,3 +15,8 @@ class StockQuote
 	end
 
 end
+
+
+class DetailedStockQuote < StockQuote
+
+end
