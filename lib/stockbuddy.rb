@@ -27,7 +27,7 @@ puts DetailedStockQuote.get_quote("FOO")
 	:last_name => "Petty",
 	:cash => 999999)
 
-puts @tom_petty
+puts @tom_petty.inspect
 puts @tom_petty.cash
 
 puts @tom_petty.make_purchase("FOO", 5)
