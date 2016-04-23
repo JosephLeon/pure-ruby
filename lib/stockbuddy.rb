@@ -19,7 +19,7 @@ require 'stockbuddy/purchase'
 
 puts StockQuote.get_quote("FOO")
 # puts StockQuote.new().get_quote("FOO")
-# puts DetailedStockQuote.new().get_quote("FOO")
+puts DetailedStockQuote.get_quote("FOO")
 
 @tom_petty = User.new(
 	:id => 1,
