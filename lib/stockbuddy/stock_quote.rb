@@ -1,15 +1,26 @@
+require 'rubygems'
+require 'nokogiri'
+require 'open-uri'
+
 class StockQuote
 	@@rndm = Random.new
+	BASE_YAHOO_URL = "http://finance.yahoo.com"
+
 	def StockQuote.get_quote(ticker)
 		if self.authenticate_ticker(ticker)
-			tickers = [:SBUX, :WFC, :BP, :NFLX, :FSLR]
-			@data = {
-				"ticker" => tickers.sample,
-				"price" => (@@rndm.rand(5.00..120.00)*100).round / 100.0,
-				"eps" => (@@rndm.rand(-1.00..25.00)*100).round / 100.0,
-				"time" => Time.now.getutc,
-			}
-			return @data
+			
+			stock_page_url = "#{BASE_YAHOO_URL}/q?s=#{ticker}"
+			page = Nokogiri::HTML(open(stock_page_url))
+
+			cleaned_ticker = ticker.downcase
+			stock_ticker_element = "#yfs_l84_#{cleaned_ticker}"
+
+			# Stock Quote
+			stock_quote = {}
+			stock_price = page.css(stock_ticker_element).text
+			stock_quote["stock_price"] = stock_price
+
+			return stock_quote
 		else
 			return nil
 		end
